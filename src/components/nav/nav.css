@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --clr:#000;
+}
+
+.navSection {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  padding-left: 1rem;
+  /* display: flex;
+  justify-content: space-between; */
+  transition: 0.5s;
+  z-index: 99;
+}
+
+.navSection .Nav {
+  width: 10vw;
+  min-height: 100vh;
+  background: #fff;
+  overflow-x: hidden;
+  padding-left: 10px;
+  transition: 0.5s;
+}
+
+.navSection .Nav ul {
+  position: relative;
+  height: 100vh;
+}
+
+.navSection .Nav ul li {
+  position: relative;
+  list-style: none;
+  transition: 0.5s;
+}
+
+.navSection .Nav ul li a {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+}
+
+.navSection .Nav ul li a .pic {
+  margin-top: 0.5rem;
+  position: fixed;
+  border-radius: 50%;
+  max-width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: 5px solid var(--clr);
+}
+
+.navSection .Nav ul li a .pic img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.navSection .Nav ul li a .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  height: 50px;
+  font-size: 4rem;
+  color: #000;
+  z-index: 999;
+  box-shadow: 0px 3px 5px #222;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.navSection .Nav ul li a .text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 3rem;
+  color: var(--clr);
+  padding-left: 2rem;
+  font-weight: 1000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 0.1rem;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.navSection .Nav ul li a .icon:before {
+  content: '';
+  position: absolute;
+  inset: 0.4rem;
+  border-radius: 50%;
+  background: var(--bg);
+  color: #fff;
+  transform: scale(0);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.navSection .Nav ul li.logo {
+  margin-bottom: 3.5rem;
+}
+
+.navSection .Nav ul li.logo .icon {
+  font-size: 2rem;
+  color: var(--clr);
+}
+
+.navSection .Nav ul li.logo .text {
+  font-size: 2rem;
+  font-weight: 1000;
+  opacity: 0;
+  font-family: Georgia;
+  text-transform: uppercase;
+  color: var(--clr);
+  text-shadow: 0 1px 1px #000;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.navSection .Nav ul li.active {
+  background: var(--clr);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: 0.5s;
+}
+
+.navSection .Nav ul li.active a .icon {
+  color: #fff;
+}
+
+.navSection .Nav ul li.active a .text {
+  color: var(--bg);
+  text-shadow: 0 1px 2px #222;
+  opacity: 1;
+}
+
+.navSection .Nav ul li.active a .icon:before {
+  transform: scale(1);
+}
+
+.navSection .Nav ul li.active:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  top: -20px;
+  right: 0px;
+  border: 0px solid #000;
+  box-shadow: 5px 5px 0 5px var(--clr);
+  transition: 0.5s;
+  border-bottom-right-radius: 20px;
+}
+
+.navSection .Nav ul li.active:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  bottom: -20px;
+  right: 0px;
+  box-shadow: 5px -5px 0 5px var(--clr);
+  border-top-right-radius: 20px;
+  transition: 0.5s;
+}
+
+.navSection .Nav ul .MenuList li {
+  margin-top: 1.5rem;
+  transition: 0.5s;
+}
+
+.navSection .Nav ul .MenuList li a .text {
+  opacity: 0;
+}
+
+.navSection .Nav .imgs {
+  position: fixed;
+  padding: 2rem 1.5rem;
+  bottom: -2rem;
+  left: 0.5%;
+  margin-bottom: 0.6rem;
+  overflow: hidden;
+}
+
+.navSection .Nav .imgs img {
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid var(--clr);
+  font-size: 0.5rem;
+  transition: 0.5s;
+  color: var(--bg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+.navSection .Nav .imgs .imgShadow {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+  z-index: 999;
+}
+
+.navSection .Nav.active {
+  width: 300px;
+  position: fixed;
+  z-index: 999;
+  transition-delay: 0.25s;
+}
+
+.navSection .Nav.active li.logo a .text {
+  opacity: 1;
+}
+
+.navSection .Nav.active li.active {
+  width: 100%;
+  background: var(--bg);
+  color: #fff;
+  border: 5px solid var(--clr);
+}
+
+.navSection .Nav.active li.active a .text, .navSection .Nav.active li.active a .icon {
+  color: #fff;
+  font-weight: 1000;
+  font-family: Georgia;
+}
+
+.navSection .Nav.active li.active:before {
+  content: '';
+  position: absolute;
+  box-shadow: 5px 5px 0 5px var(--bg);
+}
+
+.navSection .Nav.active li.active:after {
+  content: '';
+  position: absolute;
+  box-shadow: 5px -5px 0 5px var(--bg);
+}
+
+.navSection .Nav.active .MenuList li.active a .text {
+  opacity: 1;
+}
+
+.navSection .humIcon {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navSection .humIcon.active {
+  position: fixed;
+  justify-content: flex-end;
+  width: 95%;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  padding-right: 30px;
+}
+
+.navSection .humIcon:before {
+  content: '';
+  position: absolute;
+  width: calc(60px - 10px);
+  height: 3px;
+  background: #31eaff;
+  transform: translateY(-9px);
+  box-shadow: 0 9px 0 #31eaff;
+  transition: 0.5s;
+}
+
+.navSection .humIcon:after {
+  content: '';
+  position: absolute;
+  width: calc(60px - 10px);
+  height: 3px;
+  background: #31eaff;
+  transform: translateY(9px);
+  transition: 0.5s;
+}
+
+.navSection .humIcon.active:before {
+  transform: translateY(0px) rotate(45deg);
+  box-shadow: none;
+}
+
+.navSection .humIcon.active:after {
+  transform: translateY(0px) rotate(-45deg);
+}
+
+@media (max-width: 780px) {
+  .navSection .Nav ul .imgs {
+    position: fixed;
+    bottom: 5vh;
+  }
+}

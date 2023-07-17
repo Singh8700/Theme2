@@ -1,0 +1,27 @@
+
+.imgSection,.textSection{
+  width:350px;
+}
+.textSection{
+  color:#fff;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  font-family: Georgia;
+  font-weight: 1000;
+}
+
+@media(max-width:780px){
+  .imgSection,.textSection{
+    width: 100%;
+  }
+  .textSection{
+    margin-top: 20vh;
+    font-size: 2rem;
+    padding-left: 5rem;
+  }
+}
+@media (max-width:480px){
+  .textSection{
+    font-size: 1.2rem;
+  }
+}
