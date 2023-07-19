@@ -22,7 +22,8 @@ html{
   z-index: 99;
   .Nav{
   width:10vw;
-  min-height: 100vh;
+  height: 100vh;
+  position: fixed;
   background:#fff;
   overflow-x: hidden;
   padding-left: 10px;

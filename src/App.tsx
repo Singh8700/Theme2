@@ -5,6 +5,9 @@ import {
   Route
 } from "react-router-dom"
 import Home from "./components/home/Home"
+import Footer from "./components/footer/Footer"
+import Experience from "./components/experience/Experience"
+import Services from "./components/services/Services"
 import {ThemeProvider} from "styled-components"
 
 
@@ -26,9 +29,10 @@ function App() {
       <Nav path={path}/>
       <Routes>
       <Route path="/" element={<Home/>}/>
-      
+      <Route path="/services" element={<Services/>}/>
+      <Route path="/about" element={<Services/>}/>
       </Routes>
-
+      <Footer/>
       </ThemeProvider>
     </>
   )
