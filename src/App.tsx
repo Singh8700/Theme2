@@ -31,8 +31,8 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path="/about" element={<Services/>}/>
+      <Route path="*" element={<h1>404</h1>}/>
       </Routes>
-      <Footer/>
       </ThemeProvider>
     </>
   )

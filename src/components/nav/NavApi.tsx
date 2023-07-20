@@ -14,13 +14,6 @@ const NavList =[{
   style:"#afa01f",
   link:"/",
   status:true
-},{
-  id:2,
-  text:"Projects",
-  icon:<IonIcon icon={barChartOutline}/>,
-  style:"#1ca00f",
-  link:"/projects",
-  status:false
 },
 {
   id:3,
@@ -30,6 +23,14 @@ const NavList =[{
   link:"/services",
   status:false
 },{
+  id:2,
+  text:"Projects",
+  icon:<IonIcon icon={barChartOutline}/>,
+  style:"#1ca00f",
+  link:"/projects",
+  status:false
+},
+{
   id:4,
   text:"blogs",
   icon:<IonIcon icon={albumsOutline}/>,

@@ -1,7 +1,7 @@
 import ImgGallery from "../imgGallery/ImgGallery"
 import "./home.css"
 import CV from "./CV"
-
+import TutorServices from "../services/TutorServices"
 const Home =()=>{
   //alert(window.innerWidth)
   return (
@@ -28,6 +28,9 @@ const Home =()=>{
     <div className="imgSection">
     <ImgGallery/>
     </div>
+    </div>
+    <div className="container">
+    <TutorServices/>
     </div>
     </>
     )

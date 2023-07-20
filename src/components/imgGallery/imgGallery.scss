@@ -86,14 +86,16 @@
   left:25%;
 }
 .imgs.imgSec{
-  top:40%;
+  top:35%;
   left:62%;
-}
-.imgs.imgThr{
-  top:19%;
-  left:44%;
   width:200px;
   height: 250px;
+}
+.imgs.imgThr{
+  top:22%;
+  left:44%;
+  width:120px;
+  height: 150px;
 }
 }
 }
@@ -104,16 +106,16 @@
    position:absolute;
  }
  .imgs.imgOne{
-   width:100px;
+   width:120px;
    height: 150px;
  }
  .imgs.imgSec{
    width:150px;
-   height: 200px;
+   height: 180px;
  }
  .imgs.imgThr{
    width:180px;
-   height: 220px;
+   height: 200px;
  }
  }
 }

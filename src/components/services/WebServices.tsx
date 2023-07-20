@@ -4,7 +4,7 @@ const WebServices=()=>{
   const Wrapper = styled.section`
     width:90%;
     height:400px;
-    margin:2rem auto;
+    margin:2rem auto 2rem;
     flex-wrap:wrap;
     .title{
       width:90%;
@@ -21,7 +21,8 @@ const WebServices=()=>{
       box-shadow:2px 2px 10px var(--clr),inset 2px 2px 5px var(--wht),inset -2px -2px 5px var(--clr);
       border-radius:1.2rem;
       padding:1.2rem 3rem;
-      color:#fff;
+      background:var(--color);
+      color:var(--clr);
       .icon{
         font-size:8rem;
         padding:2rem;
@@ -31,7 +32,7 @@ const WebServices=()=>{
       }
       }
       .card:hover{
-        color:#fff;
+        background:var(--color);
       }
     }
     @media(max-width:${({theme})=>theme.media.mobile}){
