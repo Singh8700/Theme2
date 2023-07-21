@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer"
 import Experience from "./components/experience/Experience"
 import Services from "./components/services/Services"
 import {ThemeProvider} from "styled-components"
-
+import Error from "./components/error/Error"
 
 function App() {
   const location = useLocation()
@@ -31,8 +31,9 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path="/about" element={<Services/>}/>
-      <Route path="*" element={<h1>404</h1>}/>
+      <Route path="*" element={<Error/>}/>
       </Routes>
+      <Footer/>
       </ThemeProvider>
     </>
   )

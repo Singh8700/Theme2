@@ -11,7 +11,7 @@ const Services=()=>{
     align-item: center;
     flex-wrap:wrap;
     flex-direction: columns;
-    position: absolute;
+    position: relative;
     .WebServices,.TutorServices{
       width:100%;
     }

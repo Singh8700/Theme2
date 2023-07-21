@@ -176,11 +176,11 @@
 }
 
 .navSection .Nav .imgs {
-  position: fixed;
-  padding: 2rem 1.5rem;
-  bottom: -2rem;
-  left: -0.8rem;
-  margin-bottom: 0.6rem;
+  position: absolute;
+  padding: 2rem 1rem;
+  bottom: 5rem;
+  margin-bottom: 2rem;
+  left: 0rem;
   overflow: hidden;
 }
 
@@ -307,7 +307,7 @@
 
 @media (max-width: 780px) {
   .navSection .Nav ul .imgs {
-    position: fixed;
+    position: absolute;
     bottom: 5vh;
   }
 }

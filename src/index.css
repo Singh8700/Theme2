@@ -4,6 +4,7 @@
   font-weight: 400;
   --wht:#fff;
   --clr:#000;
+  --light-text:#aaa;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 120, 255, 0.4);
@@ -119,9 +120,9 @@ img{
 }
 .container{
   width:91vw;
-  height: 100vh;
   z-index: 1;
   margin-left: 9vw;
+  margin-bottom: 12vh;
   color:var(--color);
 }
 .flex{
@@ -130,12 +131,18 @@ img{
   align-items: center;
   flex-wrap: wrap-reverse;
 }
-.col{
+.col,.footCols{
   width:100%;
   height:100%;
   columns:4;
   margin:2rem 1.5rem;
   column-gap: 10px;
+  break-inside: avoid;
+}
+.footCols{
+  columns:3;
+  break-after: avoid;
+  break-before: avoid;
   break-inside: avoid;
 }
 @media(max-width:660px){
@@ -148,6 +155,9 @@ img{
   }
   .col{
     columns:2;
+  }
+  .footCols{
+    columns:1;
   }
 }
 @media (prefers-color-scheme: light) {
