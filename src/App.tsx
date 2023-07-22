@@ -7,7 +7,7 @@ import {
 import Home from "./components/home/Home"
 import Footer from "./components/footer/Footer"
 import Maps from "./components/maps/Maps"
-import Experience from "./components/experience/Experience"
+
 import Services from "./components/services/Services"
 import Projects from "./components/projects/Project"
 import {ThemeProvider} from "styled-components"
