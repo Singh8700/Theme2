@@ -33,9 +33,8 @@ const About =()=>{
   width:90%;
   text-align:center;
   overflow-x: hidden;
+  padding-top:5%;
   margin:auto;
-  padding-left:20%;
-  padding-top:20%;
  .container{
    width:80%;
    overflow-x: hidden;
@@ -59,14 +58,14 @@ const About =()=>{
   }
   .content{
     width:80vw;
-    margin-left:-10%;
+    margin:auto;
   }
  `
   return (
-    <Wrapper>
+    <Wrapper className="container">
       <h3>Let's Do</h3>
       <h2>About Me</h2>
-      <div className="aboutMe flex">
+      <div className="aboutMe container flex">
        <p className="scale">
         <span className="highlights">
         H

@@ -30,14 +30,14 @@ const Projects=()=>{
   const Wrapper = styled.section`
   width:100%;
   height:88%;
-  margin-top:20%;
+  padding-top:5%;
   text-align:center;
   .container{
     margin:0 auto;
   }
   `
   return (
-    <Wrapper>
+    <Wrapper className="container">
     <h3>Let's See</h3>
     <h2>Our Projects</h2>
     <div className="container">

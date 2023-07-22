@@ -5,12 +5,10 @@ import {logoInstagram,logoGithub} from "ionicons/icons"
 import {Link} from "react-router-dom"
 const Footer=()=>{
   const Wrapper = styled.section`
-  
   position: relative;
   bottom:0;
-  margin-left:16vw;
-  margin-bottom:0px;
   padding-bottom:2rem;
+  padding-top:25em;
   font-family: Georgia;
   .footerTitle{
     width:300px;
@@ -68,7 +66,7 @@ const Footer=()=>{
   }
   `
   return (
-   <Wrapper>
+   <Wrapper className="container">
      <div className="footerTitle flex">
       <h3 className="footerH3">Get Started</h3>
       <h3>Let's go to explore more thinks together</h3>

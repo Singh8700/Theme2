@@ -24,6 +24,7 @@
 html{
   scroll-behavior: smooth;
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -163,9 +164,11 @@ section > h2{
 }
 
 .container{
-  width:100%;
+  width:85vw;
   z-index: 1;
-  padding-left:20%;
+  margin:auto;
+  margin-left:8vw;
+  margin-bottom:0px;
   color:var(--color);
   overflow-x: hidden;
 }

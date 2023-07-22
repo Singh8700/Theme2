@@ -158,11 +158,11 @@
    }
   }
     .imgs{
-    position: absolute;
-    padding: 2rem 1rem;
-    bottom:5rem;
+    position: fixed;
+    padding: 5em 0rem;
+    bottom: 0;
     margin-bottom: 2rem;
-    left:0rem;
+    left:0em;
     overflow: hidden;
     img{
       width:50px;

@@ -6,7 +6,7 @@ const Home =()=>{
   //alert(window.innerWidth)
   return (
     <>
-    <div className="container containers flex">
+    <div className="container flex">
     <div className="textSection">
     <h3 className="subTitle">
     Hello, 

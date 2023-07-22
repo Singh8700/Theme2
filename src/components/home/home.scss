@@ -1,10 +1,10 @@
 
 .imgSection,.textSection{
-  width:380px;
+  width:350px;
 }
 .textSection{
   color:var(--wht);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding: 1.5rem 2rem;
   font-family: Georgia;
   overflow-x: hidden;
@@ -26,6 +26,6 @@
 }
 @media (max-width:480px){
   .textSection{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
