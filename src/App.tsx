@@ -1,3 +1,4 @@
+import {useState} from "react"
 import Nav from "./components/nav/Nav"
 import {
   useLocation,
@@ -15,9 +16,8 @@ import Error from "./components/error/Error"
 import About from "./components/about/About"
 import Contact from "./components/contact/Contact"
 import Alerts from "./components/alerts/Alerts"
-import {useState} from "react";
 import Animation from "./Animation"
-function App() {
+const App=() =>{
   const location = useLocation()
   const path= location.pathname
   //console.log(path)

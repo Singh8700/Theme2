@@ -13,15 +13,21 @@ const About =()=>{
   }
   const myData2={
     title:"Other Skills",
-    Api:Other
+    Api:Other,
+    width:"max-content",
+    height:"max-content"
   }
   const mySkills={
     title:"My Qualification",
-    Api:Qualification
+    Api:Qualification,
+    width:"max-content",
+    height:"max-content"
   }
   const myAwad={
     title:"My Awads",
-    Api:list
+    Api:list,
+    width:"max-content",
+    height:"max-content"
   }
   const Wrapper=styled.section` 
   width:100%;
