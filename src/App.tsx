@@ -8,7 +8,7 @@ import {
 import Home from "./components/home/Home"
 import Footer from "./components/footer/Footer"
 import Maps from "./components/maps/Maps"
-
+import Animation from "./Animation"
 import Services from "./components/services/Services"
 import Projects from "./components/projects/Project"
 import {ThemeProvider} from "styled-components"
@@ -16,7 +16,6 @@ import Error from "./components/error/Error"
 import About from "./components/about/About"
 import Contact from "./components/contact/Contact"
 import Alerts from "./components/alerts/Alerts"
-import Animation from "./Animation"
 const App=() =>{
   const location = useLocation()
   const path= location.pathname
@@ -29,7 +28,7 @@ const App=() =>{
       smallMobile:'480px'
     }
   }
-  const showAlert=(msg)=>{
+  const showAlert = (msg)=>{
     setAlerts(msg)
     setTimeout(()=>{
       setAlerts(null)
@@ -46,7 +45,7 @@ const App=() =>{
       <Route path="/services" element={<Services/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/projects" element={<Projects/>}/>
-      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/contact" element={<Contact showAlert={showAlert}/>}/>
       <Route path="*" element={<Error/>}/>
       </Routes>
       <Maps/>

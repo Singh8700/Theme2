@@ -1,6 +1,5 @@
 import {IonIcon} from "@ionic/react"
-import {logoHtml5,desktop,logoCss3,logoJavascript,logoPython,documentAttachSharp,
-  imagesSharp, colorPaletteSharp
+import {desktop,logoCss3,logoJavascript,logoPython,documentAttachSharp,imagesSharp, colorPaletteSharp
 } from "ionicons/icons"
 
 const TutorApi = [

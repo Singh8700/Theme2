@@ -2,7 +2,7 @@ import "./nav.css"
 import {Link} from 'react-router-dom'
 import NavList from "./NavApi"
 import {useState} from "react"
-const Nav=(props)=>{
+const Nav=({path})=>{
   const [toggleBtn,setToggleBtn]=useState(false)
   const [sideBar,setSideBar] = useState(false)
   const btnToggle=()=>{
@@ -15,7 +15,7 @@ const Nav=(props)=>{
       <div className={`Nav ${sideBar?"active":""}`}>
         <ul>
           {/*<!-- web logo anme -->*/}
-          <li className="logo" style={{"--bg":"#88feaa"}}>
+          <li className="logo">
             <Link to="/">
               <div className="icon pic">
                 <img src="bg.png" alt="rohit@8700"/>
@@ -29,7 +29,7 @@ const Nav=(props)=>{
         {/*<!-- nav section -->*/}
         {NavList.map((item)=>{
           return(
-         <li key={item.id} className={`list ${props.path === item.link?"active":""}`}style={{"--bg":item.style}}>
+         <li key={item.id} className={`list ${path === item.link?"active":""}`}style={item.style}>
             <Link to={item.link}>
               <div className="icon">
                 {item.icon}
@@ -43,7 +43,7 @@ const Nav=(props)=>{
         })}
         </div>
         <div className="imgs">
-        <li className="logo" style={{"--bg":"#88feaa"}}>
+        <li className="logo">
             <Link to="/contact">
               <div className="icon">
               <span className="imgShadow"></span>
