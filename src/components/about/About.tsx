@@ -35,6 +35,7 @@ const About =()=>{
   overflow-x: hidden;
   margin:auto;
   padding-left:20%;
+  padding-top:20%;
  .container{
    width:80%;
    overflow-x: hidden;
