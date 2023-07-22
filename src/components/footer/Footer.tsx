@@ -18,9 +18,11 @@ const Footer=()=>{
     flex-direction:column;
     border-radius:2rem;
     margin:-2rem auto 2rem;
+    
    .footerH3{
      font-size:2.5rem;
      color:rgb(200,190,225);
+     
    }
     h3{
       font-size:1.6rem;
@@ -37,6 +39,9 @@ const Footer=()=>{
   }
   .footerMainTitle{
     padding:2rem 1.5rem;
+    h2{
+    text-align:left;
+    }
   }
   .footerNav{
     break-inside: avoid;

@@ -33,6 +33,7 @@ const About =()=>{
   width:90%;
   text-align:center;
   overflow-x: hidden;
+  padding-left:5%;
   padding-top:5%;
   margin:auto;
  .container{
@@ -42,6 +43,7 @@ const About =()=>{
   .aboutMe{
     flex-direction:column;
     text-align:left;
+    padding-left:20em;
     p{
       font-size:2rem;
       overflow-x: hidden;
@@ -57,7 +59,7 @@ const About =()=>{
     }
   }
   .content{
-    width:80vw;
+    width:100vw;
     margin:auto;
   }
  `

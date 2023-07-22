@@ -20,17 +20,17 @@ const HeroSection=({myData})=>{
       margin:5rem auto 2rem;
     }
     .cards{
-      width:80%;
+      width:70%;
       margin:2rem auto;
       text-align:center;
       .card{
       width:${width};
       height:${height};
-      margin:4rem auto;
+      margin:20em auto;
       word-break:break;
       box-shadow:2px 2px 10px var(--clr),inset 2px 2px 5px var(--wht),inset -2px -2px 5px var(--clr);
       border-radius:1.2rem;
-      padding:1.2rem 3rem;
+      padding:0.5rem 2rem;
       background:var(--wht);
       color:var(--clr);
       img{
@@ -52,7 +52,8 @@ const HeroSection=({myData})=>{
         h3{
           font-size:2rem;
           color:gray;
-          margin-top:1rem;
+          padding-bottom:1em;
+          margin-top:-0.5em;
         }
         
       }
@@ -65,10 +66,6 @@ const HeroSection=({myData})=>{
       height:auto;
       .title{
         font-size:1.2rem;
-      }
-      .card{
-        height:250px;
-        margin:2rem auto;
       }
     }
   `

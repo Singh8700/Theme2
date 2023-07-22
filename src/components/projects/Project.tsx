@@ -28,7 +28,6 @@ const Projects=()=>{
     height:"auto"
   }
   const Wrapper = styled.section`
-  width:100%;
   height:88%;
   padding-top:5%;
   text-align:center;

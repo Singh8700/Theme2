@@ -2,8 +2,6 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 const ErrorPage = () => {
   const Wrapper = styled.section`
-  max-width:100%;
-  min-height:80vh;
   display:flex;
   justify-content: center;
   margin:auto;
@@ -32,7 +30,7 @@ const ErrorPage = () => {
   }
 `;
   return (
-  <Wrapper>
+  <Wrapper className="container">
       <div className="container">
         <div>
           <h2>404</h2>
