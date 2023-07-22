@@ -205,7 +205,7 @@ section > h2{
 }
 @media(max-width:660px){
   .navSection .Nav{
-    width:15vw;
+    width:20vw;
     max-height:100vh;
     }
   .col{

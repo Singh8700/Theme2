@@ -29,36 +29,42 @@ const About =()=>{
     width:"max-content",
     height:"max-content"
   }
-  const Wrapper=styled.section` 
-  width:100%;
-  height:92%;
-  margin-top:20%;
+  const Wrapper=styled.section`
+  width:90%;
   text-align:center;
-  .container{
-    margin:auto;
-  }
+  overflow-x: hidden;
+  margin:auto;
+  padding-left:20%;
+ .container{
+   width:80%;
+   overflow-x: hidden;
+ }
   .aboutMe{
-    width:90%;
-    margin:2rem auto;
     flex-direction:column;
     text-align:left;
     p{
-      font-size:3rem;
+      font-size:2rem;
+      overflow-x: hidden;
     }
     .highlights{
       color:var(--color-primary);
-      font-size:4rem;
+      font-size:3rem;
+      overflow-x: hidden;
     }
     button{
       font-size:3rem;
+      overflow-x: hidden;
     }
+  }
+  .content{
+    width:80vw;
+    margin-left:-10%;
   }
  `
   return (
     <Wrapper>
       <h3>Let's Do</h3>
       <h2>About Me</h2>
-      <div className="container">
       <div className="aboutMe flex">
        <p className="scale">
         <span className="highlights">
@@ -79,15 +85,11 @@ const About =()=>{
         <button className="btn">Send Me</button>
      </Link>
       </div>
-      <div className="aboutQualifications">
-        <HeroSection myData={myAwad}/>
-        <HeroSection myData={mySkills}/>
-      </div>
-      <div className="aboutSkills">
-        <h1>My Skills</h1>
-        <HeroSection myData={myData}/>
-        <HeroSection myData={myData2}/>
-      </div>
+    <div className="content">
+      <HeroSection myData={myAwad}/>
+      <HeroSection myData={mySkills}/>
+       <HeroSection myData={myData}/>
+       <HeroSection myData={myData2}/>
      </div>
     </Wrapper>
     )
