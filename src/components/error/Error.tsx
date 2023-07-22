@@ -6,7 +6,7 @@ const ErrorPage = () => {
   min-height:80vh;
   display:flex;
   justify-content: center;
-  margin-left:30%;
+  margin:auto;
   align-items: centre;
   .container {
     padding: 15rem 4rem;

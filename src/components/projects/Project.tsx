@@ -40,12 +40,12 @@ const Projects=()=>{
     <Wrapper className="container">
     <h3>Let's See</h3>
     <h2>Our Projects</h2>
-    <div className="container">
+
     <HeroSection myData={projectApi}/>
     <HeroSection myData={posterApi}/>
     <HeroSection myData={logoApi}/>
     <HeroSection myData={designApi}/>  
-    </div>
+
     </Wrapper>
     )
 }

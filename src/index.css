@@ -61,7 +61,7 @@ h1,h2,h3{
   font-family: Georgia;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1.1;
 }
 h2{
@@ -210,6 +210,12 @@ section > h2{
   .navSection .Nav{
     width:20vw;
     max-height:100vh;
+    }
+    .container{
+      padding-left:20% ;
+    }
+    h1{
+      font-size: 3rem;
     }
   .col{
     columns:2;
