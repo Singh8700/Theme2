@@ -1,7 +1,6 @@
 
 .navSection{
   width:100vw;
-  height:80px;
   position: fixed;
   padding-left: 1rem;
   /* display: flex;
@@ -10,7 +9,7 @@
   z-index: 99;
   .Nav{
   width:5vw;
-  height: 100vh;
+  min-height: 100%;
   position: fixed;
   background:var(--color);
   overflow-x: hidden;

@@ -11,7 +11,7 @@ const Nav=(props)=>{
   }
 
   return (
-        <div className="navSection">
+      <div className="navSection">
       <div className={`Nav ${sideBar?"active":""}`}>
         <ul>
           {/*<!-- web logo anme -->*/}

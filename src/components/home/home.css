@@ -1,5 +1,5 @@
 .imgSection, .textSection {
-  width: 350px;
+  width: 380px;
 }
 
 .textSection {
@@ -7,7 +7,12 @@
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
   font-family: Georgia;
+  overflow-x: hidden;
   font-weight: 1000;
+}
+
+.textSection h3, .textSection h2 {
+  text-align: left;
 }
 
 @media (max-width: 780px) {

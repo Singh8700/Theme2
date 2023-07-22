@@ -5,10 +5,12 @@ import {logoInstagram,logoGithub} from "ionicons/icons"
 import {Link} from "react-router-dom"
 const Footer=()=>{
   const Wrapper = styled.section`
+  
   position: relative;
   bottom:0;
   margin-left:16vw;
   margin-bottom:0px;
+  padding-bottom:2rem;
   font-family: Georgia;
   .footerTitle{
     width:300px;

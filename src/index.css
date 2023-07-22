@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   --wht:#fff;
@@ -13,6 +13,8 @@
   background-color: #242424;
   --color:rgba(255, 255, 255, 0.87);
   font-synthesis: none;
+  --highlight:#009fff;
+  --darklight:#4db5ff;
  --transition-all: all 400ms ease;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -35,6 +37,9 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+.text-center{
+  margin-top: 20%;
+}
 a{
   color:var(--color-primary);
   transition:var(--transition-all);
@@ -50,7 +55,10 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
+h1,h2,h3{
+  font-weight: 1000;
+  font-family: Georgia;
+}
 h1 {
   font-size: 3rem;
   line-height: 1.1;
@@ -58,10 +66,42 @@ h1 {
 h2{
   font-size: 1.5rem;
   line-height: 1.1;
+  text-align: center;
+  margin-bottom: 10%;
 }
 h3{
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.1;
+  text-align: center;
+}
+/*====== Gernal Style ====*/
+
+.transformX{
+  animation: transformX 200ms linear 1;
+}
+@keyframes transformX{
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
+.scales{
+  animation: zooming 200ms linear 1;
+
+}
+.containerScale{
+  animation: zooming 200ms linear 1;
+
+}
+@keyframes zooming{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
 }
 button {
   border-radius: 8px;
@@ -112,18 +152,36 @@ img{
  width:100%;
  object-fit: cover;
 }
+section > h3{
+  font-size: 1.5rem;
+  color:var(--highlight);
+  margin:0.5rem auto;
+}
+section > h2{
+  font-size: 2rem;
+  color:var(--darklight);
+}
+
+.container{
+  width:100%;
+  z-index: 1;
+  padding-left:20%;
+  color:var(--color);
+  overflow-x: hidden;
+}
+.heroContainer{
+  width:100vw;
+  z-index: 1;
+  margin:auto;
+  color:var(--color);
+  overflow-x: hidden;
+}
 .containers{
   position: relative;
   z-index: -1;
   height:100vh;
+  width:100vw;
   z-index: 1;
-}
-.container{
-  width:91vw;
-  z-index: 1;
-  margin-left: 9vw;
-  margin-bottom: 12vh;
-  color:var(--color);
 }
 .flex{
   display: flex;
@@ -148,11 +206,8 @@ img{
 @media(max-width:660px){
   .navSection .Nav{
     width:15vw;
+    max-height:100vh;
     }
-  .container{
-    width:80vw;
-    margin-left: 20vw;
-  }
   .col{
     columns:2;
   }
