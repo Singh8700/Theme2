@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 import Animation from "../../Animation"
 
@@ -91,11 +91,13 @@ const HeroSection=({myData})=>{
           <h3>{item.exp}</h3>
           <h3>{item.result}</h3>
           {item.link?
-          <Link to={item.link}>
+          <NavLink to={item.link}>
+          <a href={item.link}>
            <button className="btn scales">
             Click me
             </button>
-          </Link>:''}
+          </a>
+          </NavLink>:''}
           </div>
         </a>
       </li>
