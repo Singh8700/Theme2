@@ -16,7 +16,7 @@ const Nav=({path})=>{
         <ul>
           {/*<!-- web logo anme -->*/}
           <li className="logo">
-            <Link to="/">
+            <Link to=".." relative={path} preventScrollReset={true}>
               <div className="icon pic">
                 <img src="bg.png" alt="rohit@8700"/>
               </div>

@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import Nav from "./components/nav/Nav"
 import {
   useLocation,
@@ -20,6 +20,9 @@ const App=() =>{
   const location = useLocation()
   const path= location.pathname
   //console.log(path)
+  useEffect(()=>{
+    window.scrollTo({top:0, behaviour:"smooth"})
+  },[path])
   const [alerts,setAlerts]=useState(null);
   const theme ={
     media:{

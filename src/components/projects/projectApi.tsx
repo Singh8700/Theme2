@@ -1,5 +1,3 @@
-
-
 const Pic=[
   {
     id:5,

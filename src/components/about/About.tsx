@@ -1,31 +1,17 @@
 import styled from "styled-components"
 import HeroSection from "../heroSection/HeroSection"
-import {list,Qualification} from "./Qualification"
+
 import { Link } from "react-router-dom";
+import Award from "./Awad"
+import Education from "./Education"
+import FrontEnd from "./FrontEnd"
+import Other from "./Other"
 import ImgGallery from "../imgGallery/ImgGallery"
-import {frontEnd,Other} from "./Skills"
+
 const About =()=>{
-  const myData={
-    title:"Frontend Skills",
-    Api:frontEnd,
-    width:"max-content",
-    height:"max-content"
-  }
   const myData2={
     title:"Other Skills",
     Api:Other,
-    width:"max-content",
-    height:"max-content"
-  }
-  const mySkills={
-    title:"My Qualification",
-    Api:Qualification,
-    width:"max-content",
-    height:"max-content"
-  }
-  const myAwad={
-    title:"My Awads",
-    Api:list,
     width:"max-content",
     height:"max-content"
   }
@@ -88,10 +74,10 @@ const About =()=>{
      </Link>
       </div>
     <div className="content">
-      <HeroSection myData={myAwad}/>
-      <HeroSection myData={mySkills}/>
-       <HeroSection myData={myData}/>
-       <HeroSection myData={myData2}/>
+     <Award/>
+     <Education/>
+     <FrontEnd/>
+     <Other/>
      </div>
     </Wrapper>
     )

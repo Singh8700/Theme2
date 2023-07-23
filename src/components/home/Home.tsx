@@ -1,5 +1,6 @@
 import ImgGallery from "../imgGallery/ImgGallery"
 import "./home.css"
+
 import CV from "./CV"
 import TutorServices from "../services/TutorServices"
 const Home =()=>{
@@ -7,6 +8,7 @@ const Home =()=>{
   return (
     <>
     <div id="home" className="container flex">
+
     <div className="textSection">
     <h3 className="subTitle">
     Hello, 
