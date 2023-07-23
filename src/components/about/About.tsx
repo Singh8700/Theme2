@@ -69,7 +69,7 @@ const About =()=>{
      </Link>
       </div>
     <div className="content">
-    <div className="ExtraOption">
+    <div className="extraOption">
     <Certificate/>
     </div>
      <Award/>
