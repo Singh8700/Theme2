@@ -4,8 +4,9 @@ import styled from "styled-components"
 const Certificates=()=>{
   const Wrapper = styled.section`
   .extraOption{
+   margin:2rem auto;
    background-image:linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('Python.jpg');
-   background-position:100em 150em;
+   background-position:center center;
    background-size:100% 400px;
    background-attachment: fixed;
    background-repeat:no-repeat;

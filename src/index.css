@@ -55,6 +55,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  background: var(--clr);
 }
 h1,h2,h3{
   font-weight: 1000;
@@ -164,18 +165,19 @@ section > h2{
 }
 
 .container{
-  width:85vw;
+  width:100vw;
   z-index: 1;
   margin:auto;
-  margin-left:8vw;
+  padding-left:8vw;
   margin-bottom:0px;
   color:var(--color);
   overflow-x: hidden;
 }
 .heroContainer{
-  width:100vw;
+  width:80vw;
   z-index: 1;
   margin:auto;
+  padding-left:8vw;
   color:var(--color);
   overflow-x: hidden;
 }
@@ -206,6 +208,10 @@ section > h2{
   break-before: avoid;
   break-inside: avoid;
 }
+.extra{
+  width:100%;
+  padding: 5%;
+}
 @media(max-width:660px){
   .navSection .Nav{
     width:20vw;
@@ -223,6 +229,9 @@ section > h2{
   .footCols{
     columns:1;
   }
+  .extra{
+    padding-left: 15%;
+  }
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -232,6 +241,7 @@ section > h2{
     --wht:#000;
     --clr:#fff;
   }
+  
   a:hover {
     color: #747bff;
   }

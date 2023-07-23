@@ -66,9 +66,14 @@ const Footer=()=>{
       }
   }
   }
+@media(max-width:${({theme})=>theme.media.mobile}){
+  padding-left:20%;
   .footerCopyRight{
-    
+  h3{
+    text-align:left;
   }
+  }
+}
   `
   return (
    <Wrapper className="container">

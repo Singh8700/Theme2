@@ -4,7 +4,7 @@ import HeroSection from "../heroSection/HeroSection"
 const TutorServices=()=>{
   const myData={
     title:"Tutor Services",
-    Api:TutorApi
+    Api:TutorApi,
   }
   return (
     <>

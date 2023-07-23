@@ -5,6 +5,7 @@ const ErrorPage = () => {
   display:flex;
   justify-content: center;
   margin:auto;
+  padding-left:8%;
   align-items: centre;
   .container {
     padding: 15rem 4rem;
@@ -23,6 +24,7 @@ const ErrorPage = () => {
     }
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}){
+     padding-left:20%;
     .container{
       margin:0rem auto;
       padding:5rem 2rem;

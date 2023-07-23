@@ -1,4 +1,5 @@
 .container {
+  width: 100vw;
   display: grid;
   margin: 0 auto 20em;
   grid-template-columns: 1fr 1fr;
@@ -7,21 +8,23 @@
   font-family: Georgia;
   overflow-x: hidden;
   word-wrap: break-word;
+  padding-left: 15em;
 }
 
 .options {
-  width: 100%;
+  width: 500px;
   padding: 5em 3em;
   text-align: center;
 }
 
 .option {
-  width: 100%;
+  width: max-content;
   background: var(--color-bg-variant);
   margin-bottom: 2rem;
   border-radius: 2rem;
   margin: 2rem auto 1.5rem;
   padding: 1em 2em;
+  font-size: 2em;
   transition: var(--transition-all);
 }
 
@@ -44,9 +47,12 @@
 }
 
 .contactRight {
+  display: flex;
+  justify-content: center;
   flex-basis: 60%;
   -webkit-flex-basis: 60%;
   width: 60%;
+  align-items: center;
   flex-direction: column;
   padding-left: 10px;
   margin: 0 auto;
@@ -65,7 +71,7 @@
 .contactRight form .btn2 {
   padding: 14px 60px;
   font-size: 2em;
-  margin-top: 1.5em;
+  margin-top: 2em;
   cursor: pointer;
   transition: var(--transition-all);
 }

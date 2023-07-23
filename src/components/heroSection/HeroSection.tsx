@@ -20,8 +20,7 @@ const HeroSection=({myData})=>{
       margin:5rem auto 2rem;
     }
     .cards{
-      width:70%;
-      margin:2rem auto;
+      width:100%;
       text-align:center;
       .card{
       width:${width};
@@ -72,7 +71,7 @@ const HeroSection=({myData})=>{
   return (
     <>
     <Animation/>
-    <Wrapper className="heroContainer scales flex">
+    <Wrapper className="scales flex container">
     <div className="title flex transformX">
         <h1 className="scales">{title}</h1>
     </div>

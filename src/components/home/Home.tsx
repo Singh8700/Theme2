@@ -11,7 +11,7 @@ const Home =()=>{
   //alert(window.innerWidth)
   return (
     <>
-    <div id="home" className="container flex">
+    <div id="home" className="heroContainer flex">
 
     <div className="textSection">
     <h3 className="subTitle">
@@ -35,7 +35,7 @@ const Home =()=>{
     <ImgGallery/>
     </div>
     </div>
-    <div className="container">
+    <div className="extra">
     <Certificate/>
     <TutorServices/>
     </div>
