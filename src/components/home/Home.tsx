@@ -36,9 +36,7 @@ const Home =()=>{
     </div>
     </div>
     <div className="container">
-    <div className="extraOption">
     <Certificate/>
-    </div>
     <TutorServices/>
     </div>
     </>
