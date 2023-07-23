@@ -3,6 +3,10 @@ import "./home.css"
 
 import CV from "./CV"
 import TutorServices from "../services/TutorServices"
+import Certificate from "../certificate/Certificate"
+
+
+
 const Home =()=>{
   //alert(window.innerWidth)
   return (
@@ -32,6 +36,10 @@ const Home =()=>{
     </div>
     </div>
     <div className="container">
+    
+    <div className="ExtraOption">
+    <Certificate/>
+    </div>
     <TutorServices/>
     </div>
     </>

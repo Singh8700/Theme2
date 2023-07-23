@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import HeroSection from "../heroSection/HeroSection"
-
+import Certificate from "../certificate/Certificate"
 import { Link } from "react-router-dom";
 import Award from "./Awad"
 import Education from "./Education"
@@ -9,12 +9,7 @@ import Other from "./Other"
 import ImgGallery from "../imgGallery/ImgGallery"
 
 const About =()=>{
-  const myData2={
-    title:"Other Skills",
-    Api:Other,
-    width:"max-content",
-    height:"max-content"
-  }
+  
   const Wrapper=styled.section`
   width:90%;
   text-align:center;
@@ -47,6 +42,13 @@ const About =()=>{
   .content{
     width:100vw;
     margin:auto;
+    .ExtraOption{
+      background-image:linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('Python.jpg');
+      background-position:100em 150em;
+      background-size:100% 400px;
+      background-attachment: fixed;
+      background-repeat:no-repeat;
+    }
   }
  `
   return (
@@ -74,6 +76,9 @@ const About =()=>{
      </Link>
       </div>
     <div className="content">
+    <div className="ExtraOption">
+    <Certificate/>
+    </div>
      <Award/>
      <Education/>
      <FrontEnd/>

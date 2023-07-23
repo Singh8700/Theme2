@@ -91,13 +91,14 @@ const HeroSection=({myData})=>{
           <h3>{item.exp}</h3>
           <h3>{item.result}</h3>
           {item.link?
-          <NavLink to={item.link}>
-          <a href={item.link}>
+          <NavLink to={item.link} download>
+         <a href={item.link} download>
            <button className="btn scales">
             Click me
             </button>
           </a>
           </NavLink>:''}
+          {item.download?item.download:''}
           </div>
         </a>
       </li>
