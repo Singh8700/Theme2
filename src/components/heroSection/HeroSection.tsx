@@ -47,10 +47,10 @@ const HeroSection=({myData})=>{
         flex-direction:column;
         text-shadow:1px 0px 1px var(--wht);
         h2{
-          font-size:2.5rem;
+          font-size:100em;
         }
         h3{
-          font-size:2rem;
+          font-size:60em;
           color:gray;
           padding-bottom:1em;
           margin-top:-0.5em;

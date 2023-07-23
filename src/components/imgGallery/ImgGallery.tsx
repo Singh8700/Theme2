@@ -8,10 +8,10 @@ const ImgGallery=()=>{
       <img src="pic01.jpg" alt="Rohit Kumar Singh"/>
     </div>
    <div className="imgs imgSec flex">
-      <img src="pic03.jpg" alt="Rohit Kumar Singh"/>
+      <img src="pic02.jpg" alt="Rohit Kumar Singh"/>
     </div>
     <div className="imgs imgThr flex">
-    <img src="pic02.jpg" alt="Rohit Kumar Singh"/>
+    <img src="pic03.jpg" alt="Rohit Kumar Singh"/>
     </div>
     </div>
     </>
