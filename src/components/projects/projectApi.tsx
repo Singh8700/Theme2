@@ -6,7 +6,7 @@ const Pic=[
     cll:"transY",
     text:"Image Search App",
     exp:"Now finding photos is even easier with this app (Try Now)",
-    link:'https://singh8700.github.io/imgsearch/'
+    link:'https://bit.ly/3pYHJZU'
   },
   {
     id:4,
@@ -15,7 +15,7 @@ const Pic=[
     cll:"transY",
     text:"Redux Tools Simple used",
     exp:"create a simple example for reduxjs/tool in ReactJs",
-    link:'https://singh8700.github.io/redux/'
+    link:'https://bit.ly/3K9ilrm'
   },
   {
     key:1,
@@ -24,7 +24,7 @@ const Pic=[
     cll:"transY",
     text:"Notes Management System",
     exp:"Manage your notes securely and efficiently",
-    link:'https://singh8700.github.io/userListProject/'
+    link:'https://bit.ly/3OoHbVF'
   },
   {
     key:6,
@@ -33,7 +33,7 @@ const Pic=[
     cll:"transY",
     text:"Card Effect",
     exp:"Amazing Card Effect on mouse moves every angle",
-    link:'https://singh8700.github.io/CardsEffects-/'
+    link:'https://bit.ly/3DrIqye'
     
   },
     {
@@ -43,7 +43,7 @@ const Pic=[
      cll:"transX",
      text:"Education Institute Demo",
       exp:"it's a demo for Education institute site only teaching purpose",
-      link:'https://singh8700.github.io/demo1/'
+      link:'https://bit.ly/43SdkKZ'
     },{
       key:3,
      img:"port05.webp",
@@ -51,7 +51,7 @@ const Pic=[
       cl:"transX",
       cll:"transY",
       exp:"Lucky Number Finder Web",
-      link:'https://singh8700.github.io/DOB/'
+      link:'https://bit.ly/3Q6SaFo'
     }
     ]
 const Poster=[
