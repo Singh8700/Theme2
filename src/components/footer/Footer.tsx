@@ -80,7 +80,9 @@ const Footer=()=>{
      <div className="footerTitle flex">
       <h3 className="footerH3">Get Started</h3>
       <h3>Let's go to explore more thinks together</h3>
-      <button>Click me</button>
+      <Link to="/projects" alt="Projects Files">
+      <button>Start Now</button>
+      </Link>
      </div>
      <div className="footCols">
      <div className="footerMainTitle">
