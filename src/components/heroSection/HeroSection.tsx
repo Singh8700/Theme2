@@ -16,7 +16,7 @@ const HeroSection=({myData})=>{
    }
     .title{
       width:80%;
-      font-size:2.5rem;
+      font-size:3.5rem;
       margin:5rem auto 2rem;
     }
     .cards{
@@ -46,15 +46,19 @@ const HeroSection=({myData})=>{
         flex-direction:column;
         text-shadow:1px 0px 1px var(--wht);
         h2{
-          font-size:100em;
+          font-size:2rem;
+          d;
+          margin-bottom:0;
         }
         h3{
-          font-size:60em;
+          font-size:1.5rem;
           color:gray;
           padding-bottom:1em;
-          margin-top:-0.5em;
         }
-        
+        .btn{
+          font-size:1.5rem;
+          margin-bottom:0.5rem;
+        }
       }
       }
       .card:hover{

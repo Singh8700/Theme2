@@ -10,7 +10,7 @@ const Certificates=()=>{
    background-size:100% 400px;
    background-attachment: fixed;
    background-repeat:no-repeat;
-   font-size:0.28rem;
+   
 }
   `;
   const projectApi={
