@@ -13,6 +13,8 @@ const Projects=()=>{
   height:88%;
   padding-top:5%;
   text-align:center;
+  margin-left:-3rem;
+  overflow:hidden;
   .container{
     margin:0 auto;
   }

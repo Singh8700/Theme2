@@ -160,9 +160,9 @@
     .imgs{
     position: fixed;
     padding: 5em 0rem;
-    bottom: 0;
+    bottom:-4rem;
     margin-bottom: 2rem;
-    left:5em;
+    left:8em;
     overflow: hidden;
     img{
       width:50px;
@@ -275,8 +275,8 @@
 @media(max-width:780px){
   .navSection .Nav ul .imgs{
     position: absolute;
-    bottom: 5vh;
-    
+    bottom:0;
+    margin:auto;
   }
   
 }

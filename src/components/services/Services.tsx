@@ -10,6 +10,7 @@ const Services=()=>{
     justify-content:center;
     align-item: center;
     flex-wrap:wrap;
+    margin-left:-3rem;
     flex-direction: columns;
     position: relative;
     .WebServices,.TutorServices{
