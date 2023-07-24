@@ -13,15 +13,16 @@
 
 .container h3 {
   margin-top: 5em;
+  margin-bottom: 0;
 }
 
 .container h2 {
-  margin-top: -0.8em;
+  margin-bottom: 0;
 }
 
 .options {
-  width: 500px;
-  padding: 0rem 3rem;
+  width: 600px;
+  padding: 8rem 3rem;
   text-align: center;
 }
 
@@ -155,9 +156,6 @@
   }
   .option .h3 {
     font-size: 1.8rem;
-  }
-  .option h4 {
-    font-size: 1.3rem;
   }
   .contactRight {
     margin: 0 auto;

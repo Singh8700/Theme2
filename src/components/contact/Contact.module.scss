@@ -11,15 +11,16 @@
   padding-left: 15em;
   h3{
     margin-top:5em;
+    margin-bottom: 0;
   }
   h2{
-    margin-top: -0.8em;
+    margin-bottom: 0;
   }
 }
 
 .options{
-  width:500px;
-  padding: 0rem 3rem;
+  width:600px;
+  padding: 8rem 3rem;
   text-align:center;
 }
 .option{
@@ -141,14 +142,10 @@
 @media screen and (max-width: 600px){
   .container{
     grid-template-columns: 1fr;
-    
   }
    .option {
    .h3{
     font-size: 1.8rem;
-  }
-  h4{
-    font-size: 1.3rem;
   }
  }
  .contactRight{

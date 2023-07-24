@@ -22,10 +22,10 @@ const Contact=(props)=>{
   
   
   return(
-    <section id="contact" className={`transformX ${style.container}`}>
+    <section id="contact" className={` transformX ${style.container} `}>
       <Animation/>
-      <h3 className={`scales text-center`}>Get In Touch</h3>
-      <h2 className={`scales `}>Contact Me</h2>
+      <h3>Get In Touch</h3>
+      <h2 >Contact Me</h2>
       
       <div className={`scales ${style.container}`}>
         <div className={style.options}>
