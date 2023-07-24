@@ -21,7 +21,7 @@ const Projects=()=>{
   `
   return (
     <Wrapper className="container">
-    <h3>Let's See</h3>
+    <h3 className="h3">Let's See</h3>
     <h2>Our Projects</h2>
     <Pic/>
     <Poster/>

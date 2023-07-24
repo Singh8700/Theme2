@@ -61,6 +61,9 @@ h1,h2,h3{
   font-weight: 1000;
   font-family: Georgia;
 }
+.h3{
+      margin-top:5em;
+}
 h1 {
   font-size: 4rem;
   line-height: 1.1;

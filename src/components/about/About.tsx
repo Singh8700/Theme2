@@ -46,7 +46,7 @@ const About =()=>{
  `
   return (
     <Wrapper className="container">
-      <h3>Let's Do</h3>
+      <h3 className="h3">Let's Do</h3>
       <h2>About Me</h2>
       <div className="aboutMe container flex">
        <p className="scale">

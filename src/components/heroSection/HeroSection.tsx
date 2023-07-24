@@ -47,7 +47,6 @@ const HeroSection=({myData})=>{
         text-shadow:1px 0px 1px var(--wht);
         h2{
           font-size:2rem;
-          d;
           margin-bottom:0;
         }
         h3{

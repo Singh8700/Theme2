@@ -13,16 +13,13 @@ const Services=()=>{
     margin-left:-3rem;
     flex-direction: column;
     position: relative;
-    h3{
-      margin-top:5em;
-    }
     .WebServices,.TutorServices{
       width:100%;
     }
   `
   return (
     <Wrapper className="container">
-      <h3>Let's See</h3>
+      <h3 className="h3">Let's See</h3>
       <h2>Our Services</h2>
       <div className="WebServices">
         <WebServices/>
