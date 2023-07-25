@@ -177,9 +177,9 @@
 .navSection .Nav .imgs {
   position: fixed;
   padding: 5em 0rem;
-  bottom: -4rem;
+  top: 80vh;
   margin-bottom: 2rem;
-  left: 8em;
+  left: 20em;
   overflow: hidden;
 }
 
