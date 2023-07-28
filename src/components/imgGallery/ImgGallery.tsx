@@ -16,18 +16,19 @@ const ImgGallery=()=>{
     timeLine
       .from(elementOne,{
       y:40,
-      opacity:1,
-      duration:2
+      opacity:0,
+      duration:1
     })
       .from(elementTwo,{
         x:30,
-        opacity:1,
-        duration:2
+        opacity:0,
+        duration:1
       })
       .from(elementThr,{
         x:30,
-        opacity:1,
-        duration:2
+        y:10,
+        opacity:0,
+        duration:1
       })
   },[])
   

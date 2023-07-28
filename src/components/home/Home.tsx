@@ -34,7 +34,7 @@ const Home =()=>{
       scrollTrigger:{
         trigger:element,
         scroller:"body",
-        start: 'top 11%',
+        start: 'top 21%',
         end: 'top -900%',
         scrub:2,
         pin:true
