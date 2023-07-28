@@ -67,6 +67,7 @@
   flex-direction: column;
   padding-left: 10px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .contactRight form {
@@ -97,7 +98,7 @@
   width:100%;
 }*/
 .contactRight form input, .contactRight form textarea {
-  width: 300px;
+  width: 250px;
   background: #262626;
   padding: 0.9rem;
   margin: 0.5em -2.8em;

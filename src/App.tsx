@@ -8,6 +8,7 @@ import {
 import Home from "./components/home/Home"
 import Footer from "./components/footer/Footer"
 import Maps from "./components/maps/Maps"
+
 import Animation from "./Animation"
 import Services from "./components/services/Services"
 import Projects from "./components/projects/Project"
@@ -24,6 +25,20 @@ const App=() =>{
     window.scrollTo({top:0, behaviour:"smooth"})
   },[path])
   const [alerts,setAlerts]=useState(null);
+  
+  // useEffect(()=>{
+  // gsap.to("#home h1",{
+  //     transform:"translateX(-50%)",
+  //     scrollTrigger:{
+  //       trigger:"#home",
+  //       scroller:"body",
+  //       markers:true,
+  //       start:"top 0",
+  //       end:"top -100%",
+  //       scrub:2,
+  //       pin:true
+  //     }
+  //   })},[])
   const theme ={
     media:{
       tab:'780px',
@@ -45,7 +60,7 @@ const App=() =>{
       <Nav path={path}/>
       <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/services" element={<Services/>}/>
+       <Route path="/services" element={<Services/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/projects" element={<Projects/>}/>
       <Route path="/contact" element={<Contact showAlert={showAlert}/>}/>

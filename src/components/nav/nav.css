@@ -6,6 +6,8 @@
   justify-content: space-between; */
   transition: 0.5s;
   z-index: 99;
+  background: red;
+  overflow-x: hidden;
 }
 
 .navSection .Nav {

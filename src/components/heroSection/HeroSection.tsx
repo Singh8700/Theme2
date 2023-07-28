@@ -1,17 +1,18 @@
 import styled from "styled-components"
 import {NavLink} from "react-router-dom"
-
+//import {useRef} from "react"
 import Animation from "../../Animation"
 
 const HeroSection=({myData})=>{
-  const {title,Api,width,height}=myData
+  const {title,Api,width,height,anime}=myData
   const Wrapper = styled.section`
-    width:100%;
+    width:80%;
     height:max-content;
     margin:5rem auto;
     flex-wrap:wrap;
     overflow-x:hidden;
    .container{
+     width:100%;
      margin:0 auto;
    }
     .title{
@@ -76,7 +77,7 @@ const HeroSection=({myData})=>{
     <Animation/>
     <Wrapper className="scales flex container">
     <div className="title flex transformX">
-        <h1 className="scales">{title}</h1>
+        <h1 ref={anime} className="scales">{title}</h1>
     </div>
     <ul className="cards col flex scales">
       {

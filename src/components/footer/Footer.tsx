@@ -10,6 +10,7 @@ const Footer=()=>{
   padding-bottom:2rem;
   padding-top:25em;
   font-family: Georgia;
+  overflow-x:hidden;
   .footerTitle{
     width:300px;
     height:120px;
@@ -22,7 +23,7 @@ const Footer=()=>{
    .footerH3{
      font-size:2.5rem;
      color:rgb(200,190,225);
-     
+     overflow-x:hidden;
    }
     h3{
       font-size:1.6rem;
@@ -39,6 +40,7 @@ const Footer=()=>{
   }
   .footerMainTitle{
     padding:2rem 1.5rem;
+    overflow-x:hidden;
     h2{
     text-align:left;
     }
@@ -46,6 +48,7 @@ const Footer=()=>{
   .footerNav{
     break-inside: avoid;
     padding:5rem auto;
+    overflow-x:hidden;
     ul{
       li{
         font-size:6rem;

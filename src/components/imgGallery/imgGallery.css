@@ -10,6 +10,7 @@
   position: absolute;
   height: 180em;
   margin: auto;
+  opacity: 1;
 }
 
 .imgGallery .imgs img {
