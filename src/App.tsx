@@ -8,7 +8,7 @@ import {
 import Home from "./components/home/Home"
 import Footer from "./components/footer/Footer"
 import Maps from "./components/maps/Maps"
-
+import MouseEvent from "./components/mouse/MouseEvent"
 import Animation from "./Animation"
 import Services from "./components/services/Services"
 import Projects from "./components/projects/Project"
@@ -17,28 +17,16 @@ import Error from "./components/error/Error"
 import About from "./components/about/About"
 import Contact from "./components/contact/Contact"
 import Alerts from "./components/alerts/Alerts"
+
 const App=() =>{
   const location = useLocation()
   const path= location.pathname
   //console.log(path)
   useEffect(()=>{
     window.scrollTo({top:0, behaviour:"smooth"})
+ 
   },[path])
   const [alerts,setAlerts]=useState(null);
-  
-  // useEffect(()=>{
-  // gsap.to("#home h1",{
-  //     transform:"translateX(-50%)",
-  //     scrollTrigger:{
-  //       trigger:"#home",
-  //       scroller:"body",
-  //       markers:true,
-  //       start:"top 0",
-  //       end:"top -100%",
-  //       scrub:2,
-  //       pin:true
-  //     }
-  //   })},[])
   const theme ={
     media:{
       tab:'780px',
@@ -55,6 +43,7 @@ const App=() =>{
   return (
     <>
     <ThemeProvider theme={theme}>
+      <MouseEvent/>
       <Animation/>
       <Alerts msg={alerts}/>
       <Nav path={path}/>
@@ -68,6 +57,7 @@ const App=() =>{
       </Routes>
       <Maps/>
       <Footer/>
+
       </ThemeProvider>
     </>
   )

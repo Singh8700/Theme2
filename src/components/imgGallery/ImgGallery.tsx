@@ -1,12 +1,10 @@
 import "./imgGallery.css"
 import { useRef, useEffect } from "react"
-import locomotiveScroll from 'locomotive-scroll'
 import {gsap} from "gsap"
 const ImgGallery=()=>{
   const imgOne=useRef(null)
   const imgTwo=useRef(null)
   const imgThr=useRef(null)
-  const scrollSection = useRef(null)
   useEffect(()=>{
     
     const elementOne = imgOne.current
@@ -17,24 +15,24 @@ const ImgGallery=()=>{
       .from(elementOne,{
       y:40,
       opacity:0,
-      duration:1
+      duration:0.5
     })
       .from(elementTwo,{
         x:30,
         opacity:0,
-        duration:1
+        duration:0.5
       })
       .from(elementThr,{
         x:30,
         y:10,
         opacity:0,
-        duration:1
+        duration:0.5
       })
   },[])
   
   return (
     <>
-    <div scroll-data-container ref={scrollSection} className="imgGallery flex">
+    <div className="imgGallery flex">
     <div ref={imgOne} className="imgs imgOne flex">
       <img src="pic01.jpg" alt="Rohit Kumar Singh"/>
     </div>

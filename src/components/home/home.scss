@@ -15,10 +15,10 @@
   font-family: Georgia;
   font-weight: 1000;
   position: relative;
+  
   h1{
   white-space: nowrap;
   position: absolute;
-  bottom:0%;
   opacity: 0.2;
   font-size: 10vw;
   //color: var(--clr);
@@ -36,7 +36,9 @@
     font-size: 4vw;
   }
   .textHighlight{
+    opacity: 1;
     overflow: hidden;
+    padding-bottom: 8em;
   }
 }
 

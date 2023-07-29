@@ -209,13 +209,26 @@ section > h2{
   column-gap: 10px;
   break-inside: avoid;
 }
+.mouseCircle{
+  position: fixed;
+  width:100vw;
+  height: 100%;
+}
 .footCols{
   columns:3;
   break-after: avoid;
   break-before: avoid;
   break-inside: avoid;
 }
-
+#minicircle{
+  position: absolute;
+  width:8px;
+  height:8px;
+  border-radius: 50%;
+  background: var(--wht);
+  z-index: 99999;
+  transition: 0.5s;
+}
 @media(max-width:660px){
   .navSection .Nav{
     width:20vw;

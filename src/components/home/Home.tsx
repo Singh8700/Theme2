@@ -1,12 +1,12 @@
 import ImgGallery from "../imgGallery/ImgGallery"
 import { useRef, useEffect } from "react"
 import "./home.css"
+
 import {gsap} from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
 import CV from "./CV"
 import TutorServices from "../services/TutorServices"
 import Certificate from "../certificate/Certificate"
-import locomotiveScroll from 'locomotive-scroll'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -14,19 +14,22 @@ const Home =()=>{
   const textData = useRef(null)
   const highlight = useRef(null)
   const allSection = useRef(null)
-  const scrollSection = useRef(null)
-  //alert(window.innerWidth)
+
+  
   useEffect(()=>{
-    const scroll = new locomotiveScroll({
-      el: scrollSection.current,
-      smooth:true,
-      multiplayer: 5
-    })
+    
   const element = textData.current
   const elementSec = highlight.current 
  const allSections = allSection.current
    const timeLine = gsap.timeline()
-    timeLine.to(element,
+    timeLine.from(".textHighlight > *",{
+      y:10,
+      opacity:0,
+      duration:2,
+      delay: -1,
+      stagger: .5
+    })
+    .to(element,
     {
       transform: "translateX(-200vw)",
       opacity:0.5,
@@ -34,32 +37,30 @@ const Home =()=>{
       scrollTrigger:{
         trigger:element,
         scroller:"body",
-        start: 'top 21%',
+        start: 'top 80em',
         end: 'top -900%',
-        scrub:2,
+        scrub:true,
         pin:true
       },
     })
-    
-    scroll.update()
-    return ()=> scroll.destroy()
     
   },[])
   
   return (
     <>
-    <div scroll-data-container id="home" className="heroContainer flex" ref={scrollSection}>
+    
+    <div id="home" className="heroContainer flex">
 
     <div className="textSection">
       <h1 ref={textData}>
       Hello Rohit Kumar
       </h1>
     <div ref={highlight} className="textHighlight">
+    <span className="highlights">Rohit Kumar</span>
     <h2 className="subDep">
-    <span className="highlights">Rohit Kumar</span><br/>
     I'm Web-Designer & DCA Tutor.
     </h2>
-    <p ref={allSection} className="subDetails">
+    <p className="subDetails">
     I'm a freelance at the time.
     </p>
     <p className="subDetails">
@@ -68,7 +69,7 @@ const Home =()=>{
     <CV/>
     </div>
     </div>
-    <div className="imgSection">
+    <div  className="imgSection">
     <ImgGallery/>
     </div>
     </div>
