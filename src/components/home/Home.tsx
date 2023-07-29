@@ -23,11 +23,11 @@ const Home =()=>{
  const allSections = allSection.current
    const timeLine = gsap.timeline()
     timeLine.from(".textHighlight > *",{
-      y:10,
+      y:-10,
       opacity:0,
       duration:2,
-      delay: -1,
-      stagger: .5
+      delay: -2,
+      stagger: 1.5
     })
     .to(element,
     {
