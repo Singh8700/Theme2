@@ -11,10 +11,10 @@ import ImgGallery from "../imgGallery/ImgGallery"
 const About =()=>{
   
   const Wrapper=styled.section`
-  width:90%;
+  width:100%;
   text-align:center;
   overflow-x: hidden;
-  padding-left:5%;
+  padding-left:12%;
   padding-top:5%;
   margin:auto;
  .container{
@@ -37,11 +37,20 @@ const About =()=>{
     button{
       font-size:3rem;
       overflow-x: hidden;
+      margin-bottom:2rem;
     }
   }
   .content{
     width:100%;
     margin:auto;
+  }
+  @media(max-width:${({theme})=>theme.media.mobile}){
+  padding-left:20%;
+    .aboutMe{
+      button{
+        font-size:2rem;
+      }
+    }
   }
  `
   return (

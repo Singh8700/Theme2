@@ -15,17 +15,20 @@ import Projects from "./components/projects/Project"
 import {ThemeProvider} from "styled-components"
 import Error from "./components/error/Error"
 import About from "./components/about/About"
+import TextAnime from "./components/texts/TextAnime"
 import Contact from "./components/contact/Contact"
 import Alerts from "./components/alerts/Alerts"
 
 const App=() =>{
   const location = useLocation()
+  
   const path= location.pathname
   //console.log(path)
   useEffect(()=>{
     window.scrollTo({top:0, behaviour:"smooth"})
- 
   },[path])
+  
+  
   const [alerts,setAlerts]=useState(null);
   const theme ={
     media:{
@@ -45,6 +48,7 @@ const App=() =>{
     <ThemeProvider theme={theme}>
       <MouseEvent/>
       <Animation/>
+      <TextAnime/>
       <Alerts msg={alerts}/>
       <Nav path={path}/>
       <Routes>
@@ -57,7 +61,6 @@ const App=() =>{
       </Routes>
       <Maps/>
       <Footer/>
-
       </ThemeProvider>
     </>
   )
