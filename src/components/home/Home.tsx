@@ -12,12 +12,13 @@ const Home =()=>{
   useEffect(()=>{
 
    const timeLine = gsap.timeline()
-    timeLine.from(".textSection > *",{
-      y:-4,
+    timeLine.from(".textHighlight > *",{
+      y:5,
+      x:10,
       opacity:0,
-      duration:2,
-      delay: -2,
-      stagger: 0.9
+      duration:10,
+      delay: -1,
+      stagger: 0.5
     })
   },[])
   
@@ -27,13 +28,13 @@ const Home =()=>{
     <div id="home" className="heroContainer flex">
 
     <div className="textSection">
-    <h2>
+    <div className="textHighlight">
+   <h2>
     Hello,
     </h2>
     <h1>
-      Hello Rohit Kumar
+     Rohit Kumar
     </h1>
-    <div className="textHighlight">
     <h2 className="subDep">
     I'm Web-Designer & DCA Tutor.
     </h2>
