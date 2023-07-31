@@ -1,4 +1,5 @@
 import {useState, useEffect } from "react"
+import styled from "styled-components"
 import {gsap} from "gsap"
 const MouseEvent=()=>{
   const [timeOut,setTimeOut]=useState(0)
@@ -37,10 +38,21 @@ const MouseEvent=()=>{
     mouseEvent()
   },[])
   return(
-    <div className="mouseCircle">
+    <Warpper>
     <span id="minicircle">
     </span>
-    </div>
+    </Warpper>
     )
 }
 export default MouseEvent
+const Warpper=styled.div`
+  #minicircle{
+  position: fixed;
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background: var(--wht);
+  z-index:9999;
+  transition: 0.5s;
+}
+`

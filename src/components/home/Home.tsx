@@ -14,9 +14,9 @@ const Home =()=>{
    const timeLine = gsap.timeline()
     timeLine.from(".textHighlight > *",{
       y:5,
-      x:10,
-      opacity:0,
-      duration:10,
+      x:5,
+      opacity:1,
+      duration:2,
       delay: -1,
       stagger: 0.5
     })
@@ -29,7 +29,7 @@ const Home =()=>{
 
     <div className="textSection">
     <div className="textHighlight">
-   <h2>
+    <h2 className="subDep">
     Hello,
     </h2>
     <h1>
