@@ -53,6 +53,10 @@ const Warpper=styled.div`
   border-radius: 50%;
   background: var(--wht);
   z-index:9999;
-  transition: 0.5s;
+}
+@media(max-width:${({theme})=>theme.media.mobile}){
+  #minicircle{
+    transition:all 0.5s ease-in;
+  }
 }
 `
