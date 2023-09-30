@@ -6,7 +6,7 @@
   justify-content: space-between; */
   transition: 0.5s;
   z-index: 99;
-  background: red;
+  background: var(--wht);
   overflow-x: hidden;
 }
 
@@ -14,10 +14,10 @@
   width: 5vw;
   min-height: 100%;
   position: fixed;
+  margin: 0 0 0 -1rem;
   background: var(--wht);
   overflow-x: hidden;
   padding: 0 0 0 1rem;
-  margin: 0 -1rem;
   transition: 0.5s;
 }
 
@@ -210,6 +210,8 @@
   width: 300px;
   position: fixed;
   z-index: 999;
+  left: 0;
+  margin: 0 2em;
   transition-delay: 0.25s;
 }
 

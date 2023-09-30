@@ -8,7 +8,9 @@ const Nav=({path})=>{
   const btnToggle=()=>{
     toggleBtn?setToggleBtn(false):setToggleBtn(true)
     sideBar?setSideBar(false):setSideBar(true)
+  
   }
+
 
   return (
       <div className="navSection">

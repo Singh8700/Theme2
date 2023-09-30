@@ -39,8 +39,9 @@ const Footer=()=>{
     }
   }
   .footerMainTitle{
-    padding:2rem 1.5rem;
+    padding:2rem 5rem;
     overflow-x:hidden;
+    
     h2{
     text-align:left;
     }
@@ -69,8 +70,16 @@ const Footer=()=>{
       }
   }
   }
+  .footerCopyRight > div{
+    h3{
+    text-align:left;
+    }
+  }
 @media(max-width:${({theme})=>theme.media.mobile}){
   padding-left:20%;
+  .footerMainTitle{
+    padding:2em 1.5em;
+    }
   .footerCopyRight{
   h3{
     text-align:left;
@@ -118,13 +127,15 @@ const Footer=()=>{
       </div>
      </div>
     <div className="footerCopyRight">
+    <div>
        <h3>
         @{new Date().getFullYear()} Rohit@8700. All Rights Reserved
          </h3>
-        <div>
+    </div>
+    <div>
            <h3>PRIVACY POLICY</h3>
            <h3>TERMS & CONDITIONS</h3>
-         </div>
+    </div>
      </div>
     </div>
    </Wrapper>
