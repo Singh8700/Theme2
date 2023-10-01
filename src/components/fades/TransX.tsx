@@ -8,6 +8,7 @@ const TrnasX=()=>{
     setItmes(elements);
   }, []);
  // console.log("Animation is runing",items);
+
   items.forEach((items)=>{
     window.addEventListener("scroll",()=>{
       let revealTop = items.getBoundingClientRect().top;
@@ -25,6 +26,7 @@ const TrnasX=()=>{
     }
     })
   })
+
 }
 
 export default TrnasX

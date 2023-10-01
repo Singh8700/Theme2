@@ -24,7 +24,7 @@ const ErrorPage = () => {
     }
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}){
-     padding-left:20%;
+     padding-left:0%;
     .container{
       margin:0rem auto;
       padding:5rem 2rem;

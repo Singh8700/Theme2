@@ -46,8 +46,8 @@ const App=() =>{
   return (
     <>
     <ThemeProvider theme={theme}>
-      <MouseEvent/>
       <Animation/>
+      <MouseEvent/>
       <TextAnime/>
       <Alerts msg={alerts}/>
       <Nav path={path}/>

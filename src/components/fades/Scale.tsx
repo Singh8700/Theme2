@@ -6,7 +6,7 @@ const Scale=()=>{
     const elements = document.querySelectorAll('.scale');
     // Do something with the elements
     setItmes(elements);
-  }, []);
+  }, [0]);
   items.forEach((items)=>{
     window.addEventListener("scroll",()=>{
       let revealTop = items.getBoundingClientRect().top;

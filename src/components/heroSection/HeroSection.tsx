@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import {NavLink} from "react-router-dom"
+import Animation from "../../Animation"
 const HeroSection=({myData})=>{
   const {title,Api,width,height,anime}=myData
   const Wrapper = styled.section`
@@ -75,6 +76,7 @@ const HeroSection=({myData})=>{
     <>
 
     <Wrapper className="scales flex container">
+    <Animation/>
     <div className="title flex transformX">
         <h1 className="scales scale">{title}</h1>
     </div>
@@ -82,7 +84,6 @@ const HeroSection=({myData})=>{
       {
         Api.map((item)=>{
           return(
-       
        <li key={item.id} className={`card flex ${item.cl}`}>
         <a className="cardSection">
          <div className="icon flex">

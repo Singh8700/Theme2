@@ -25,5 +25,6 @@ const TrnasY=()=>{
     }
     })
   })
+
 }
 export default TrnasY
