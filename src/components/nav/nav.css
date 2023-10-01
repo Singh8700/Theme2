@@ -265,7 +265,7 @@
 .navSection .humIcon.active {
   position: fixed;
   justify-content: flex-end;
-  width: 95%;
+  width: 100%;
   z-index: 99;
   top: 0;
   right: 0;
@@ -313,5 +313,12 @@
     position: absolute;
     bottom: 0;
     margin: auto;
+  }
+  .Nav.show {
+    left: 0%;
+  }
+  .Nav.hide {
+    left: -100%;
+    opacity: 1;
   }
 }

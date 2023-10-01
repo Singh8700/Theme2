@@ -11,7 +11,7 @@ import ImgGallery from "../imgGallery/ImgGallery"
 const About =()=>{
   
   const Wrapper=styled.section`
-  width:100%;
+  width:100vw;
   text-align:center;
   overflow-x: hidden;
   padding-left:12%;
@@ -41,11 +41,11 @@ const About =()=>{
     }
   }
   .content{
-    width:100%;
+    width:100vw;
     margin:auto;
   }
   @media(max-width:${({theme})=>theme.media.mobile}){
-  padding-left:20%;
+  padding-left:0%;
     .aboutMe{
       button{
         font-size:2rem;
@@ -78,7 +78,6 @@ const About =()=>{
      </Link>
       </div>
     <div className="content">
-
     <Certificate/>
      <Award/>
      <Education/>

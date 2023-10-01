@@ -232,14 +232,17 @@ section > h2{
   -webkit-text-stroke: 3px var(--wht);
   -webkit-text-fill-color: var(--clr);
 }
-
+.extra{
+  width:100vw;
+  padding-left:10rem;
+}
 @media(max-width:660px){
   .navSection .Nav{
     width:20vw;
     max-height:100vh;
     }
-    .container{
-      padding-left:12% ;
+    .container,.heroContainer,.section{
+      width:100vw;
     }
     h1{
       font-size: 3rem;
@@ -251,7 +254,7 @@ section > h2{
     columns:1;
   }
   .extra{
-    padding-left: 15%;
+    padding-left:0rem;
   }
   .common h1{
   bottom:5em;

@@ -142,7 +142,9 @@
 /*==== small Screen ===*/
 @media screen and (max-width: 600px){
   .container{
+    width:100vw;
     grid-template-columns: 1fr;
+    padding: 0;
   }
    .option {
    .h3{

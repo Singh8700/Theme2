@@ -42,7 +42,8 @@ const Home =()=>{
     I'm a freelance at the time.
     </p>
     <p className="subDetails">
-    I'm currently DCA tutor in RIIT EDUCATION INSTITUTE.My speciality is I have giving my 99% + excellent works.
+    I'm currently DCA tutor in RIIT EDUCATION INSTITUTE.<br/>
+    My speciality is I have giving my 99% + excellent works.
     </p>
     <CV/>
     </div>

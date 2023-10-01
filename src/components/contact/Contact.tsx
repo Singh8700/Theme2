@@ -22,7 +22,7 @@ const Contact=(props)=>{
   
   
   return(
-    <section id="contact" className={` transformX ${style.container} `}>
+    <section id="contact" className={`transformX ${style.container}`}>
       <Animation/>
       <h3>Get In Touch</h3>
       <h2 >Contact Me</h2>

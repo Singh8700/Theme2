@@ -7,10 +7,9 @@ import styled from "styled-components"
 
 const Certificates=()=>{
   const Wrapper = styled.div`
-  
   overflow-x:hidden;
   .extraOption{
-    width:80vw;
+    width:100vw;
    margin:auto;
    background-image:linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Python.jpg');
    background-position:center center;

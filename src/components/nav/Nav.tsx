@@ -1,20 +1,26 @@
 import "./nav.css"
 import {Link} from 'react-router-dom'
 import NavList from "./NavApi"
-import {useState} from "react"
+import {useState, useEffect} from "react"
 const Nav=({path})=>{
   const [toggleBtn,setToggleBtn]=useState(false)
   const [sideBar,setSideBar] = useState(false)
+  const [add,Setadd]=useState(true)
+  
   const btnToggle=()=>{
+    clearTimeout()
     toggleBtn?setToggleBtn(false):setToggleBtn(true)
     sideBar?setSideBar(false):setSideBar(true)
-  
   }
-
+useEffect(()=>{
+  setTimeout(()=>{
+    Setadd(false)
+  },2000)
+},[])
 
   return (
       <div className="navSection">
-      <div className={`Nav ${sideBar?"active":""}`}>
+      <div className={`Nav ${sideBar?"active":""} ${add?"show":"hide"}`}>
         <ul>
           {/*<!-- web logo anme -->*/}
           <li className="logo">

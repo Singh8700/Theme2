@@ -1,10 +1,5 @@
 import styled from "styled-components"
 import {NavLink} from "react-router-dom"
-import { useRef, useEffect } from "react"
-import {gsap} from "gsap"
-import {ScrollTrigger} from "gsap/ScrollTrigger"
-
-gsap.registerPlugin(ScrollTrigger)
 const HeroSection=({myData})=>{
   const {title,Api,width,height,anime}=myData
   const Wrapper = styled.section`
@@ -75,30 +70,13 @@ const HeroSection=({myData})=>{
       }
     }
   `
-  const Anime = useRef(null)
-  useEffect(()=>{
-    const titles = Anime.current
-    const TimeLine= gsap.timeline()
-    TimeLine
-      .to(titles,{
-        transform:"transformX(-50vh)",
-        opacity:1,
-        duration:2,
-        scrollTrigger:{
-          trigger:titles,
-          scroller:"body",
-          start:"bottom bottom-=10%",
-          end:"top -50px",
-          scrub:true,
-        }
-      })
-  },[])
+  
   return (
     <>
 
     <Wrapper className="scales flex container">
     <div className="title flex transformX">
-        <h1 ref={Anime} className="scales">{title}</h1>
+        <h1 className="scales scale">{title}</h1>
     </div>
     <ul className="cards col flex scales">
       {

@@ -76,7 +76,7 @@ const Footer=()=>{
     }
   }
 @media(max-width:${({theme})=>theme.media.mobile}){
-  padding-left:20%;
+  padding-left:4%;
   .footerMainTitle{
     padding:2em 1.5em;
     }

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const CV=()=>{
   const Wrapper = styled.div`
-  width:100%;
   margin-top: 2.5rem;
   gap:3rem;
   display:flex;
