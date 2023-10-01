@@ -7,7 +7,9 @@ import {gsap} from "gsap"
 import CV from "./CV"
 import TutorServices from "../services/TutorServices"
 import Certificate from "../certificate/Certificate"
-
+import Services from "../services/Services"
+import Projects from "../projects/Project"
+import About from "../about/About"
 const Home =()=>{
   useEffect(()=>{
 
@@ -53,8 +55,9 @@ const Home =()=>{
     </div>
     </div>
     <div className="extra">
-    <Certificate/>
-    <TutorServices/>
+    <Projects/>
+    <Services/>
+    <About/>
     </div>
     </>
     )
