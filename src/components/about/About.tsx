@@ -14,7 +14,6 @@ const About =()=>{
   width:100vw;
   text-align:center;
   overflow-x: hidden;
-  padding-left:12%;
   padding-top:5%;
   margin:auto;
  .container{
@@ -28,6 +27,7 @@ const About =()=>{
     p{
       font-size:2rem;
       overflow-x: hidden;
+      padding-left:10%;
     }
     .highlights{
       color:var(--color-primary);
