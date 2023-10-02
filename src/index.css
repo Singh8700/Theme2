@@ -10,6 +10,7 @@
   --color-primary-variant: rgba(77, 120, 255, 0.4);
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
+  --ho:linear-gradient(rgba(20,150,15,0.3),rgba(151,51,202,0.2));
   background-color: #000;
   --color:rgba(255, 255, 255, 0.87);
   font-synthesis: none;
@@ -247,7 +248,7 @@ section > h2{
     h1{
       font-size: 3rem;
     }
-  .col{
+  .col,.flex{
     columns:2;
   }
   .footCols{

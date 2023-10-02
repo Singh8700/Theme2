@@ -5,8 +5,7 @@ const Pics=()=>{
   const projectApi={
     title:"Live Projects",
     Api:Pic,
-    width:"300px",
-    height:"auto"
+    width:"320px",
   }
   return (
      <HeroSection myData={projectApi}/>

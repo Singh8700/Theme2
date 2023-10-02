@@ -10,14 +10,13 @@ const HeroSection=({myData})=>{
     flex-wrap:wrap;
     overflow-x:hidden;
    .container{
-     width:100%;
+     width:100vw;
      margin:0 auto;
    }
     .title{
       width:80%;
       font-size:3.5em;
       margin:5rem auto 2rem;
-      
     }
     .cards{
       width:100%;
@@ -61,7 +60,16 @@ const HeroSection=({myData})=>{
       }
       }
       .card:hover{
-        background:var(--color);
+        background-image: linear-gradient(pink, #ffc, skyblue);
+        .text{
+        h2{
+          color:var(--darklight);
+        }
+        h3{
+          color:#000;
+          font-weight:bold;
+        }
+        }
       }
     }
     @media(max-width:${({theme})=>theme.media.mobile}){
@@ -80,7 +88,7 @@ const HeroSection=({myData})=>{
     <div className="title flex transformX">
         <h1 className="scales scale">{title}</h1>
     </div>
-    <ul className="cards col flex scales">
+    <ul className="flex cards col scales">
       {
         Api.map((item)=>{
           return(

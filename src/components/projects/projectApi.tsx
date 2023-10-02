@@ -1,5 +1,23 @@
 const Pic=[
-  {
+      {
+      key:2,
+     img:"port04.webp",
+     cl:"transY",
+     cll:"transX",
+     text:"Education Institute Demo",
+      exp:"it's a demo for Education institute site only teaching purpose",
+      link:'https://bit.ly/43SdkKZ'
+    }
+   /*  {
+      key:8,
+     img:"ludoo.jpg",
+     cl:"transY",
+     cll:"transX",
+     text:"Ludoooo Game",
+      exp:"Ludo game has been created with the simple concept of reactjs, you will definitely enjoy playing it.",
+      link:'https://bit.ly/45gY0rP'
+    }*/
+    ,{
     id:5,
     img:"imgsearch.webp",
     cl:"transX",
@@ -35,23 +53,24 @@ const Pic=[
     exp:"Amazing Card Effect on mouse moves every angle",
     link:'https://bit.ly/3DrIqye'
     
-  },
-    {
-      key:2,
-     img:"port04.webp",
-     cl:"transY",
-     cll:"transX",
-     text:"Education Institute Demo",
-      exp:"it's a demo for Education institute site only teaching purpose",
-      link:'https://bit.ly/43SdkKZ'
-    },{
+  }
+,{
       key:3,
      img:"port05.webp",
-    text:"DOB",
+    text:"Lucky Number Finder Game",
       cl:"transX",
       cll:"transY",
       exp:"Lucky Number Finder Web",
       link:'https://bit.ly/3Q6SaFo'
+    },
+    {
+      key:7,
+     img:"ludoo.jpg",
+     cl:"transY",
+     cll:"transX",
+     text:"Ludoooo Game",
+      exp:"Ludo game has been created with the simple concept of reactjs, you will definitely enjoy playing it.",
+      link:'https://bit.ly/45gY0rP'
     }
     ]
 const Poster=[
