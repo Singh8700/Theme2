@@ -76,7 +76,7 @@ const About =()=>{
         <br/>
         <button className="btn">Send Me</button>
      </Link>
-      </div>
+    </div>
     <div className="content">
     <Certificate/>
      <Award/>

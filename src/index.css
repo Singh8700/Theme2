@@ -24,6 +24,7 @@
 }
 html{
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
 }
 
 *{
@@ -50,8 +51,10 @@ a{
 a:hover{
   color:var(--color-bg);
 }
-
-body {
+html{
+  scroll-behavior:smooth;
+}
+body{
   background: var(--clr);
   overflow-x: hidden;
 }

@@ -7,10 +7,13 @@ import {gsap} from "gsap"
 import CV from "./CV"
 import TutorServices from "../services/TutorServices"
 import Certificate from "../certificate/Certificate"
-import Services from "../services/Services"
-import Projects from "../projects/Project"
-import About from "../about/About"
+import Education from "../about/Education"
+import Award from "../about/Awad"
+import Pic from "../projects/Pic"
+import FrontEnd from "../about/FrontEnd"
+
 const Home =()=>{
+  
   useEffect(()=>{
 
    const timeLine = gsap.timeline()
@@ -29,12 +32,12 @@ const Home =()=>{
     
     <div id="home" className="heroContainer flex">
 
-    <div className="textSection">
+    <div className="textSection contents" data-scroll-section>
     <div className="textHighlight">
     <h2 className="subDep">
     Hello,
     </h2>
-    <h1>
+    <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="9">
      Rohit Kumar
     </h1>
     <h2 className="subDep">
@@ -55,9 +58,11 @@ const Home =()=>{
     </div>
     </div>
     <div className="extra">
-    <Projects/>
-    <Services/>
-    <About/>
+      <Education/>
+      <Award/>
+      <FrontEnd/>
+      <Certificate/>
+      <Pic/>
     </div>
     </>
     )

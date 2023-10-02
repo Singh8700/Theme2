@@ -62,12 +62,22 @@ const HeroSection=({myData})=>{
       .card:hover{
         background-image: linear-gradient(pink, #ffc, skyblue);
         .text{
+        text-shadow:2px 2px 2px var(--clr);
         h2{
           color:var(--darklight);
         }
         h3{
-          color:#000;
+        margin-top:0.2em;
+          color:var(--wht);
           font-weight:bold;
+        }
+        .btn,.icon{
+          background:var(--wht);
+          box-shadow:2px 2px 5px var(--clr);
+          text-shadow:2px 2px 2px var(--clr);
+        }
+        .btn{
+          text-shadow:none;
         }
         }
       }
