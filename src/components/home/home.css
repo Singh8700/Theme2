@@ -10,17 +10,16 @@
 
 .textSection {
   color: var(--wht);
-  font-size: 2.5rem;
   padding-top: 1.5em;
   font-family: Georgia;
-  font-weight: 1000;
+  font-weight: bold;
   position: relative;
 }
 
 .textSection h1 {
   white-space: nowrap;
   opacity: 0.2;
-  font-size: 5vw;
+  font-size: 3rem;
   color: var(--wht);
   overflow-y: hidden;
   text-transform: uppercase;
@@ -30,10 +29,12 @@
 
 .textSection h3, .textSection h2 {
   text-align: left;
+  margin: 0.2em auto;
 }
 
 .textSection .highlights {
-  font-size: 3em;
+  font-size: 2rem;
+  color: var(--color-primary);
 }
 
 .textSection .textHighlight {
@@ -47,16 +48,26 @@
     width: 100%;
   }
   .textSection {
-    font-size: 3em;
+    font-size: 4em;
     word-break: all;
   }
   .textSection .highlights {
-    font-size: 4.5rem;
+    font-size: 4rem;
+    color: var(--color-primary);
+  }
+  .textSection h1 {
+    font-size: 6rem;
+    color: var(--wht);
   }
   .textSection h2 {
-    font-size: 4em;
+    font-size: 6em;
     white-space: nowrap;
     margin-bottom: 0;
+    font-weight: 1000;
+    font-family: Times New Roman,Trebuchet MS,Comic Sans MS;
+  }
+  .textSection p {
+    font-size: 2rem;
   }
 }
 

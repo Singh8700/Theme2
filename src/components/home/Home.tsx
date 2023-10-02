@@ -34,11 +34,11 @@ const Home =()=>{
 
     <div className="textSection contents" data-scroll-section>
     <div className="textHighlight">
-    <h2 className="subDep">
+    <h2 className="subDep transformX">
     Hello,
     </h2>
-    <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="9">
-     Rohit Kumar
+    <h1 className="anim">
+     Rohit <span className="highlights">Kumar</span>
     </h1>
     <h2 className="subDep">
     I'm Web-Designer & DCA Tutor.

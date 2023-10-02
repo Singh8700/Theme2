@@ -86,7 +86,22 @@ h3{
 .transformX{
   animation: transformX 200ms linear 1;
 }
+h2.transformX{
+  animation: transformX 2s linear 1;
+}
 @keyframes transformX{
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
+h1.anim{
+  animation: transY 3s linear 1;
+  color:var(--wht);
+}
+@keyframes transY{
   from{
     transform: translateX(-100%);
   }
