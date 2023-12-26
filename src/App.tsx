@@ -60,7 +60,7 @@ const App=() =>{
       <Alerts msg={alerts}/>
       <Nav path={path}/>
       <Routes>
-      <Route path="/" element={<Home data-scroll-section/>}/>
+      <Route path="/" element={<Home/>}/>
        <Route path="/services" element={<Services data-scroll-section/>}/>
       <Route path="/about" element={<About data-scroll-section/>}/>
       <Route path="/projects" element={<Projects data-scroll-section/>}/>

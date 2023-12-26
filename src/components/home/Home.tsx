@@ -15,7 +15,6 @@ import FrontEnd from "../about/FrontEnd"
 const Home =()=>{
   
   useEffect(()=>{
-
    const timeLine = gsap.timeline()
     timeLine.from(".textHighlight > *",{
       y:5,
