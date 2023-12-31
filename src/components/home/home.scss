@@ -6,6 +6,7 @@
 #home{
   padding: 4rem 0em;
   height:max-content;
+  
 }
 .textSection{
   color:var(--wht);
@@ -35,6 +36,7 @@
     opacity: 1;
     overflow: hidden;
     padding-bottom: 8em;
+    padding-left:2em;
   }
 }
 @media(max-width:780px){
@@ -45,10 +47,10 @@
     font-size: 4em;
     word-break: all;
 .highlights{
-  font-size: 4rem;
+  font-size: 3rem;
   color:var(--color-primary);
 }  h1{
-  font-size: 6rem;
+  font-size: 4rem;
   color:var(--wht);
 }
     h2{
@@ -59,7 +61,7 @@
       font-family:Times New Roman,Trebuchet MS,Comic Sans MS;
     }
     p{
-      font-size: 2rem;
+      font-size: 4em;
     }
   }
 }

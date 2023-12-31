@@ -15,8 +15,8 @@ const HeroSection=({myData})=>{
    }
     .title{
       width:80%;
-      font-size:3.5em;
       margin:5rem auto 2rem;
+      text-align:center;
     }
     .cards{
       width:100%;
@@ -85,7 +85,9 @@ const HeroSection=({myData})=>{
     @media(max-width:${({theme})=>theme.media.mobile}){
       height:auto;
       .title{
-        font-size:1.2rem;
+        h1{
+        font-size:2.5rem;
+        }
       }
     }
   `

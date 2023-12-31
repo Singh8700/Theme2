@@ -40,6 +40,7 @@
   opacity: 1;
   overflow: hidden;
   padding-bottom: 8em;
+  padding-left: 2em;
 }
 
 @media (max-width: 780px) {
@@ -51,11 +52,11 @@
     word-break: all;
   }
   .textSection .highlights {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--color-primary);
   }
   .textSection h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     color: var(--wht);
   }
   .textSection h2 {
@@ -66,7 +67,7 @@
     font-family: Times New Roman,Trebuchet MS,Comic Sans MS;
   }
   .textSection p {
-    font-size: 2rem;
+    font-size: 4em;
   }
 }
 

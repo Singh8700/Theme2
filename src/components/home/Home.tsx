@@ -17,9 +17,9 @@ const Home =()=>{
   useEffect(()=>{
    const timeLine = gsap.timeline()
     timeLine.from(".textHighlight > *",{
-      y:5,
-      x:5,
-      opacity:1,
+      x:30,
+      y:50,
+      opacity:0,
       duration:2,
       delay: -1,
       stagger: 0.5
