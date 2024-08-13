@@ -1,8 +1,7 @@
 import ImgGallery from "../imgGallery/ImgGallery"
-import {useEffect } from "react"
+
 import "./home.css"
 
-import {gsap} from "gsap"
 
 import CV from "./CV"
 import TutorServices from "../services/TutorServices"
@@ -13,19 +12,6 @@ import Pic from "../projects/Pic"
 import FrontEnd from "../about/FrontEnd"
 
 const Home =()=>{
-  
-  useEffect(()=>{
-   const timeLine = gsap.timeline()
-    timeLine.from(".textHighlight > *",{
-      x:30,
-      y:50,
-      opacity:0,
-      duration:2,
-      delay: -1,
-      stagger: 0.5
-    })
-  },[])
-  
   return (
     <>
     
@@ -62,6 +48,7 @@ const Home =()=>{
       <FrontEnd/>
       <Certificate/>
       <Pic/>
+      <TutorServices/>
     </div>
     </>
     )

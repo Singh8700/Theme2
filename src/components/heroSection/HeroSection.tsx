@@ -4,13 +4,12 @@ import Animation from "../../Animation"
 const HeroSection=({myData})=>{
   const {title,Api,width,height,anime}=myData
   const Wrapper = styled.section`
-    width:80%;
     height:max-content;
-    margin:5rem auto;
+    margin:0rem auto;
     flex-wrap:wrap;
     overflow-x:hidden;
    .container{
-     width:100vw;
+     width:80%;
      margin:0 auto;
    }
     .title{
@@ -19,8 +18,9 @@ const HeroSection=({myData})=>{
       text-align:center;
     }
     .cards{
-      width:100%;
+      width:70%;
       text-align:center;
+      margin:auto;
       .card{
       width:${width};
       height:${height};

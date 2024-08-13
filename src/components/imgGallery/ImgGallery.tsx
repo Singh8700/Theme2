@@ -6,26 +6,25 @@ const ImgGallery=()=>{
   const imgTwo=useRef(null)
   const imgThr=useRef(null)
   useEffect(()=>{
-    
     const elementOne = imgOne.current
     const elementTwo = imgTwo.current
     const elementThr = imgThr.current
     const timeLine = gsap.timeline()
     timeLine
-      .from(elementOne,{
+      .to(elementOne,{
       y:40,
-      opacity:0,
+      opacity:1,
       duration:0.5
     })
-      .from(elementTwo,{
+      .to(elementTwo,{
         x:30,
-        opacity:0,
+        opacity:1,
         duration:0.5
       })
-      .from(elementThr,{
+      .to(elementThr,{
         x:30,
         y:10,
-        opacity:0,
+        opacity:1,
         duration:0.5
       })
   },[])
