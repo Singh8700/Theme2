@@ -121,7 +121,7 @@ const Footer=()=>{
       <a href="https://instagram.com/singh87_singh">
         <IonIcon icon={logoInstagram}/>
       </a>
-      <a href="https://github.com.Singh8700">
+      <a href="https://github.com/Singh8700">
         <IonIcon icon={logoGithub}/>
       </a>
       </div>
