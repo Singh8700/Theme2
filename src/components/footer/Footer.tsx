@@ -118,10 +118,10 @@ const Footer=()=>{
      </div>
      <div className="footerSubscriber">
      <div className="icon">
-      <a href="#">
+      <a href="https://instagram.com/singh87_singh">
         <IonIcon icon={logoInstagram}/>
       </a>
-      <a href="#">
+      <a href="https://github.com.Singh8700">
         <IonIcon icon={logoGithub}/>
       </a>
       </div>
