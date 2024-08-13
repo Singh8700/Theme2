@@ -31,7 +31,6 @@ const [alerts,setAlerts]=useState(null);
   },[path])
   
   return (
-   <LocomotiveScrollProvider options={options} containerRef={ref}>
     <main data-scroll-container ref={ref}>
       <Nav path={path}/>
       <Routes>
@@ -44,7 +43,6 @@ const [alerts,setAlerts]=useState(null);
       </Routes>
       <Alerts msg={alerts}/>
   </main>
-  </LocomotiveScrollProvider>
   )
 }
 
