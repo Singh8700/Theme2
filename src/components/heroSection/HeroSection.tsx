@@ -8,10 +8,6 @@ const HeroSection=({myData})=>{
     margin:0rem auto;
     flex-wrap:wrap;
     overflow-x:hidden;
-   .container{
-     width:80%;
-     margin:0 auto;
-   }
     .title{
       width:80%;
       margin:5rem auto 2rem;
@@ -88,6 +84,9 @@ const HeroSection=({myData})=>{
         h1{
         font-size:2.5rem;
         }
+      .card{
+      width:90vw;
+      }
       }
     }
   `
@@ -95,7 +94,7 @@ const HeroSection=({myData})=>{
   return (
     <>
 
-    <Wrapper className="scales flex container">
+    <Wrapper className="scales flex">
     <Animation/>
     <div className="title flex transformX">
         <h1 className="scales scale">{title}</h1>

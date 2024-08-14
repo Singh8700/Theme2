@@ -100,6 +100,7 @@ h2.transformX{
 h1.anim{
   animation: transY 3s linear 1;
   color:var(--wht);
+  opacity: 1;
 }
 @keyframes transY{
   from{
